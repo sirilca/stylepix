@@ -8,7 +8,7 @@ import a6 from '../image gallery/images/a6.jpg'
 import a7 from '../image gallery/images/a7.png'
 import a8 from '../image gallery/images/a8.jpg'
 import a9 from '../image gallery/images/a9.png'
-import './imagegallery.css'
+import './Imagegallery.css'
 import { ScanSearch } from 'lucide-react'
 import overlay from '../image gallery/overlay.png'
 import {useNavigate} from "react-router-dom"

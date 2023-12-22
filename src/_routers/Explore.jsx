@@ -21,7 +21,7 @@ function Explore() {
             const reverseddata = res.data.slice().reverse()
             setArray(reverseddata)
             setOriginaldata(reverseddata)
-            console.log(res.data)
+            // console.log(res.data)
         })
     }
 
@@ -37,7 +37,7 @@ function Explore() {
 
     const downloadimage = (name, urldata) => {
         const imagename = name.replace(/ /g, '_')
-        console.log(imagename)
+        // console.log(imagename)
         // console.log(urldata)
         saveAs(urldata, `${imagename}.png`)
     }

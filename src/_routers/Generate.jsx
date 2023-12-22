@@ -35,9 +35,9 @@ function Generate() {
             setValuecheck(false)
             setOutput_image(null)
             setLoadingtime(true)
-            console.log("there is value")
+            // console.log("there is value")
             await axios.post('https://stylepixai.onrender.com/saveimage', { question }).then(response => {
-                console.log(response.data)
+                // console.log(response.data)
                 setOutput_image(response.data)
                 setLoadingtime(false)
             })
@@ -62,7 +62,7 @@ function Generate() {
 
     const download_image = () => {
         const words = question.replace(/ /g, '_')
-        console.log(output_image, words)
+        // console.log(output_image, words)
         if (words.length > 0) {
 
             saveAs(output_image[0], words)
