@@ -17,7 +17,7 @@ function Explore() {
 
 
     const imagedisplay = async () => {
-        await axios.get('http://localhost:5000/images').then(res => {
+        await axios.get('https://stylepixai.onrender.com/images').then(res => {
             const reverseddata = res.data.slice().reverse()
             setArray(reverseddata)
             setOriginaldata(reverseddata)

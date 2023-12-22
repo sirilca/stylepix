@@ -36,7 +36,7 @@ function Generate() {
             setOutput_image(null)
             setLoadingtime(true)
             console.log("there is value")
-            await axios.post('http://localhost:5000/saveimage', { question }).then(response => {
+            await axios.post('https://stylepixai.onrender.com/saveimage', { question }).then(response => {
                 console.log(response.data)
                 setOutput_image(response.data)
                 setLoadingtime(false)
