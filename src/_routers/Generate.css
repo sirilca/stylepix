@@ -1,0 +1,349 @@
+.textsearch{
+    margin-top: 10em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textsearch input{
+    width: 60em;
+    height: 3em;
+    border: .2em solid rgb(4,11,53);
+    border-radius: 8px;
+    color: rgb(4,11,53);
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left: .8vw;
+    caret-color: rgb(0, 0, 0);
+}
+
+
+.searchicon:focus {
+    color: white;
+    background-color: rgb(4, 11, 53);
+    transition: .3s;
+}
+.textsearch button:focus{
+    background-color: rgb(4, 11, 53);
+    color: white;
+}
+.searchicon:hover {
+    color: white;
+    background-color: rgb(4, 11, 53);
+    transition: .3s;
+}
+
+.textsearch button:hover {
+    background-color: rgb(4, 11, 53);
+    color: white;
+}
+.textsearch button{
+    background-color: rgb(4, 11, 53);
+    padding: 0 1em;
+    border-radius: 8px;
+    border: .2em solid rgb(4, 11, 53);
+    height: 3.6em;
+    background-color: rgb(249, 199, 56);
+    margin-left: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valuecheck{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(4, 11, 53);
+    font-weight: 900;
+    color: green;
+    font-size: 1em;
+}
+
+
+.imagedisplay{
+    margin-top: 5em;
+    /* background-color: red; */
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    /* height: 40em; */
+}
+
+.image_border{
+    border: .3em solid rgb(4, 11, 53);
+    /* padding: 0  18em; */
+    border-radius: 9px;
+    height: 32em;
+    width: 65em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(63, 84, 205, 0.153);
+    overflow: hidden;
+
+}
+.imagedisplay img{
+    height: 31.4em;
+    width: 38em;
+    /* border: .2em solid rgb(4, 11, 53); */
+}
+
+.imagedown{
+    display: flex;
+    align-items: center;
+    width: 20em;
+    justify-content: center;
+    height: 3em;
+    border-radius: 2em;
+    background-color: rgb(4, 11, 53);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: transparent;
+    border: .18em solid rgb(4, 11, 53);
+    margin: 3em;
+}
+
+.downloadicon{
+    margin-left: 1em;
+    color: white;
+    height: 1.2em;
+}
+.imagedown:hover .downloadicon{
+    transition: .2s;
+    color: rgb(4, 11, 53);
+ }
+.imagedown:hover{
+    background-color: rgb(249, 199, 56);
+    color: rgb(4, 11, 53);
+    transition: .2s;
+}
+/* copied from same way of button for explore in imagegallery.css */
+.scansearch_generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(4,11,53);
+}
+
+.scansearch_generate button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.2em 7em;
+    margin: 2em;
+    border-radius: .6em;
+    background-image: linear-gradient(to right, rgb(203, 182, 17), rgb(1, 104, 248));
+    color: white;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .1em;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0;
+    transition: .5s;
+    font-family: 'Sora', sans-serif;
+}
+
+.scansearch_generate button:hover {
+    background-image: linear-gradient(to right, rgb(74, 72, 196), rgb(130, 163, 207));
+
+}
+/* ------------------------------------------------------------------------------------ */
+.loadingtime{
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        box-sizing: border-box;
+        height: 40em;
+        width: 100%;
+}
+
+.loading_border{
+        border: .3em solid rgb(4, 11, 53);
+        margin-top: 1.6em;
+        border-radius: 9px;
+        height: 32em;
+        width: 65em;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(63, 84, 205, 0.153);
+}
+.loading_border h1{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(4,11,53);
+}
+.loadingsvg{
+    width: 20em;
+    height: 20em;
+    position: relative;
+}
+.loadingsvg img:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.loadingsvg img:last-child{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.loadingdivline{
+    height: 1em;
+    width: 55em;
+    border: .2em solid rgb(4, 11, 53);
+    border-radius: 2em;
+}
+.loadingline{
+    height: 1em;
+    width: 55em;
+    background-color: rgb(4, 11, 53);
+    animation: loading 25s infinite;
+ 
+}
+@keyframes loading {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 55em;
+    }
+
+}
+
+
+@media screen and (max-width:730px) {
+    .textsearch{
+        margin-top: 35vw;
+    }
+    .textsearch input{
+        width: 73vw;
+        height: 8vw;
+        font-size: 2.6vw;
+        border: .5vw solid rgb(4, 11, 53);
+    }
+    .textsearch button{
+        height: 2.8vw;
+        padding: 3.8vw;
+        border: .5vw solid rgb(4, 11, 53);
+    }
+    .searchicon{
+        width: 5vw;
+    }
+
+    .valuecheck{
+        font-size: 3vw;
+    }
+
+
+    .loading_border{
+        width: 90vw;
+        height: 78vw;
+        margin-top: 16vw;
+        justify-content: space-evenly;
+    }
+    .loading_border h1{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .loadingsvg{
+        width:15.4vw;
+        height: 15.4vw;
+        overflow: hidden;
+    }
+    .loadingsvg img{
+        height: 10vw;
+        width: auto;
+    }
+    .loadingdivline{
+        width: 60vw;
+
+    }
+    .loadingline{
+        width: 60vw;
+        
+    }
+    .imagedisplay{
+        margin: 0;
+        /* height: 140vw; */
+
+    }
+    .image_border{
+        width: 90vw;
+        height: 78vw;
+        background-color: rgb(4, 11, 53);
+        border-radius: 2vw;
+        border: 1vw solid rgb(4, 11, 53);
+        margin-top: 5vw;
+    }
+    .image_border img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2vw;
+
+    }
+
+    .imagedown{
+        height: 10vw;
+        width: 70vw;
+        font-size: 3vw;
+        margin: 8vw;
+    }
+    .downloadicon{
+        height: 4vw;
+        padding-left: 1.4vw;
+    }
+    .loadingtime{
+        margin-top: 5vw;
+
+    }
+    .scansearch_generate{
+        overflow: hidden;
+        height: 20vw;
+    }
+    .scansearch_div{
+        width: 60vw;
+        height: 7vw;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .scansearch_generate button{
+        height: 100%;
+        width: 100%;
+        font-size: 2.5vw;
+        padding: 0;
+    }
+
+    @keyframes loading {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 60vw;
+    }
+
+
+    }
+}

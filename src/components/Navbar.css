@@ -1,0 +1,202 @@
+.header {
+    background-color: rgb(4, 11, 53);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5em;
+    /* same as firstpart height*/
+    z-index: 22;
+    /* background-color: red; */
+}
+
+.header_sm,.sidebar_sm,.disable_sb{
+    display: none;
+}
+.first_part {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    height: 5em;
+    /* same as header height*/
+}
+
+.logo {
+    margin: 0 .5em 0 3em;
+    cursor: pointer;
+}
+
+.logo img {
+    width:7em;
+}
+
+.name h1 {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    margin: 0 2.2em;
+    cursor: pointer;
+}
+
+.search {
+    width: 1.2em;
+    margin-right: .5em;
+    color: rgba(255, 255, 255, 0.938);
+    cursor: pointer;
+}
+
+.explore h2 {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 900;
+}
+
+.github {
+    width: 11em;
+    font-size: 1em;
+    color: rgb(216, 218, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.projects {
+    grid-column: 5;
+    display: flex;
+    align-items: center;
+    margin: 0 2em 0 6em;
+}
+
+.projects button {
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 131, 209);
+    /* overflow: hidden; */
+    border-color: transparent;
+    box-shadow: transparent;
+    padding: .3em 2em .3em 2em;
+    font-size: 1.02em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:730px){
+    .header{
+        display: none;
+    }
+    .header_sm{
+        display: flex;
+        justify-content: center;
+        height: 20vw;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        box-sizing: border-box;
+        background-color: rgb(4, 11, 53);
+        z-index: 1;
+    }
+
+    .head_sm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35vw;
+        height: 100%;
+        overflow: hidden;
+    }
+    .logo{
+        /* height: 10vw;
+        width: 10vw; */
+        /* for nrew logo */
+        height: auto;
+        width: auto;
+        margin: 0 3vw 0 0;
+    }
+
+    .logo img{
+        /* height: 10vw;
+        width: 10vw;         */
+        /* for new logo change */
+        height: 10vw;
+        width: 32vw;
+    }
+    .name h1{
+        font-size: 5vw;
+        color: rgb(174, 172, 103);
+    }
+    .github_smm{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        left: 3vw;
+        margin: 7vw 0 5vw 0vw;
+        height: auto;
+        width: 6vw;
+        color: rgb(118, 101, 7);
+        cursor: pointer;
+    }
+    .sidebar_sm{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 20vw;
+        background-color: rgb(118, 101, 7);
+        left: 0;
+        top: 0;
+        z-index: 1;
+        transition: .5s;
+    }
+    .disable_sb{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 20vw;
+        background-color: rgb(118, 101, 7);
+        left: -30vw;
+        top: 0;
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .sidebar_icons{
+        margin-top: 20vw;
+        display: flex;
+        flex-direction: column;
+        height: 40vw;
+        justify-content: space-around;
+        margin-left: 2vw;        
+    }
+    .sidebar_icons span{
+        font-size: 3vw;
+        color: white;
+        font-family: 'Teko', sans-serif;
+        letter-spacing: .2vw;
+        cursor: pointer;
+
+    }
+
+    
+
+
+
+
+
+}

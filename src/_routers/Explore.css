@@ -1,0 +1,305 @@
+.mainexplore{
+    margin-top: 4em;
+    /* background-color: red; */
+    font-family: 'Sora', sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60em;
+}
+
+.explore1{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 6em;
+    width: 100%;
+    color: rgb(54,11,53);
+    /* background-color: aqua; */
+}
+
+.explore1 h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2em
+}
+
+.topnrecent{
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25em;
+
+}
+.topnrecent button {
+    font-size: 1.2em;
+    width: 10em;
+    height: 2.5em;
+    border: transparent;
+    box-shadow: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn_r {
+    width: 10em;
+    height: 2.5em;
+    border-radius: 5em;
+    overflow: hidden;
+    border:.11em solid rgb(4,11,53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_t {
+    width: 10em;
+    height: 2.5em;
+    border-radius: 5em;
+    overflow: hidden;
+    border: .11em solid rgb(4, 11, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_t.top_btn{
+    /* width: 10em;
+    height: 2.5em;
+    border-radius: 5em;
+    overflow: hidden; */
+    background-color: rgba(4, 11, 53, 0.858);
+    color: white;
+}
+.btn_t.top_btn button{
+    color: white;
+}
+.btn_r.recent_btn{
+    /* width: 10em;
+    height: 2.5em;
+    border-radius: 5em;
+    overflow: hidden; */
+    background-color: rgba(4, 11, 53, 0.858);
+    color: white;
+}
+.btn_r.recent_btn button{
+    color: white
+}
+
+
+.allimages{
+    width: 70%;
+    /* background-color: red; */
+    /* height: 100vw; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.exploreimage{
+    border: .2em solid black;
+    margin: .8em;
+    overflow: hidden;
+    border-radius: .6em;
+    height: 25em;
+    width: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(17, 37, 184, 0.155);
+    
+}
+
+.exploreimage img{
+    width: 22em;
+    height: 22em;
+    border: .3em solid rgb(4, 11, 53);
+    
+}
+.expimg1{
+    width: 30em;
+    box-sizing: border-box;
+    padding: 2em;
+}
+.expimg2 {
+    width: 20em;
+    box-sizing: border-box;
+    padding-right: 2em;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.expimg2 h1{
+    font-size: 1.8em;
+    color: rgb(4, 11, 53);
+    text-align: center;
+}
+.expname{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expdown{
+
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expdown_sm{
+    display: none;
+}
+.expdown button{
+    box-shadow: transparent;
+    border: transparent;
+}
+.expdown button{
+    background-color: green;
+    height: 3em;
+    width: 14em;
+    border-radius: .3em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 4em;
+    cursor: pointer;
+}
+.dwn{
+    /* width: 3em */
+    height: 1.5em;
+    margin-left: .4em;
+
+}
+.image_loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}
+.image_loading h1{
+    text-align: center;
+}
+
+@media screen and (max-width:730px) {
+        .mainexplore{
+            margin-top: 25vw;
+        }
+        .explore1{
+            margin: 10vw 0;
+            height: 12vw;
+        }
+        .explore1 h1{
+            font-size: 12vw;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: rgb(4, 11, 53);
+        }
+        .topnrecent{
+            width: 100vw;
+            margin-bottom: 10vw;
+            height: 15vw;
+        }
+        .topnrecent button{
+            font-size: 3vw;
+        }
+
+        .btn_r{
+            height: 7vw;
+            width: 22vw;
+        }
+        .btn_t{
+            height: 7vw;
+            width: 22vw;
+        }
+        .exploreimage{
+            width: 90vw;
+            height: 80vw;
+            flex-direction: column;
+            margin: 0;
+            box-sizing: border-box;
+            border-radius: 0;
+        }
+        .expimg1{
+           width: 70vw;
+           height: 85%;
+           padding: 4vw;
+           box-sizing: border-box;
+        }
+        .exploreimage img{
+            width: 100%;
+            height:100%;
+            border: 0.7vw solid rgb(4, 11, 53);
+        }
+        .expimg2{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 15%;
+            overflow: hidden;
+        }
+        .expname{
+            height: 100%;
+            width: 100%;
+        }
+        .expimg2 h1{
+            /* background-color: red; */
+            width: 100%;
+            margin: 0 ;
+            height: 100%;
+            font-size: 4vw;
+            text-align: center;
+        }
+
+        /* ---------------------------------------- */
+        .expdown{
+            display: none;
+        }
+
+        /* for small size the download should on otside so entire new class addedd */
+        .expdown_sm{
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            padding: 2vw;
+        }
+
+        .expdown_sm button {
+            box-shadow: transparent;
+            border: transparent;
+        }
+
+        .expdown_sm button {
+            background-color: green;
+            height: 3em;
+            width: 14em;
+            border-radius: .3em;
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            margin-bottom: 4em;
+            cursor: pointer;
+        }
+
+        .dwn {
+            /* width: 3em */
+            height: 1.5em;
+            margin-left: .4em;
+
+        }
+
+
+    
+}

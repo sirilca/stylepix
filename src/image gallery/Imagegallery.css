@@ -1,0 +1,92 @@
+.maingallery{
+background-color: rgb(157, 237, 233);
+/* background-color: green; */
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: .5em;
+}
+.fullarea{
+    padding: .5em 0;
+    gap: .5em;
+    display: flex;
+    box-sizing: border-box;
+    height: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.fullarea.forsmallscrn{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    /* top: 68vw; */
+    left: 0;
+    bottom: -1vw;
+}
+
+.overlay.half {
+    height: 30em;
+}
+
+.scansearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1vw;
+    left: 0;
+}
+.scansearch button {
+    display: flex;
+    align-items: center;
+    padding: 1.2em 7em;
+    margin-top: 2em;
+    border-radius: .6em;
+    background-image: linear-gradient(to right, rgb(203, 182, 17), rgb(1, 104, 248));
+    color: white;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .1em;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0;
+    transition: .5s;
+    font-family: 'Sora', sans-serif;
+
+}
+
+.scansearch button:hover {
+    /* padding: 1.3em 7.5em; */
+    background-image: linear-gradient(to right, rgb(74, 72, 196), rgb(130, 163, 207));
+
+}
+
+
+@media screen and (max-width:730px) {
+
+    /* if we give full area smallscreen in one group class 
+        .fullarea.forsmallscrn is dsiplayed none in big and not HERE  so this class
+        only works in small screen
+        and we displayed none for fullarea.bigcreen so it display only in big screen*/
+
+    .fullarea.forsmallscrn{
+        display: flex;
+    }
+    .fullarea{
+        gap: .8vw;
+        padding: .8vw 0;
+        height: 220vw;
+    }
+    .area{
+        gap: .8vw;
+        width: 50%;
+    }
+    .fullarea.bigscreen{
+        display: none;
+    }
+
+}

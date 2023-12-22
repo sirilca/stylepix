@@ -1,0 +1,71 @@
+
+
+.mid-part{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em; /*height of header as it is fixed */
+    background-color: rgb(4, 11, 53);
+    color: white;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    height: 30em;
+}
+
+.mid-part-inside{
+    margin: 8em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mid-part-inside h1{
+    font-size: 2.12em;
+    color: rgb(87, 164, 215);
+    text-align: center;
+}
+
+.mid-part-inside button{
+    display: flex;
+    align-items: center;
+    padding: 1.2em 7em;
+    margin-top: 2em;
+    border-radius: .6em;
+    background-image:linear-gradient(to right,rgb(203, 182, 17),rgb(1, 104, 248));
+    color: white;
+    font-weight: 800;
+    font-size: .9em;
+    letter-spacing: .1em;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0;
+        transition: .5s;
+}
+
+.mid-part-inside button:hover{
+    padding: 1.3em 7.5em;
+    background-image: linear-gradient(to right, rgb(74, 72, 196), rgb(130, 163, 207));
+
+
+}
+.scan{
+    margin-right: 1em;
+}
+
+@media screen and (max-width:730px) {
+
+    .mid-part{
+        height: 110vw;
+    }
+    .mid-part-inside{
+        margin-top: 30vw;
+    }
+    
+    .mid-part-inside h1{
+        font-size: 4.5vw;
+    }
+    .mid-part-inside button{
+        margin-top: 20vw;
+        
+    }
+
+}
